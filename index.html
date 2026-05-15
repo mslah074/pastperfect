@@ -103,6 +103,7 @@
   .card.coral  { border-color: #fca5a5; background: var(--coral-light); }
   .card.green  { border-color: #86efac; background: var(--green-light); }
   .card.blue   { border-color: #93c5fd; background: var(--blue-light); }
+  .card.blue   { border-color: #93c5fd; background: var(--blue-light); }
 
   .card h3 {
     font-family: 'Baloo 2', cursive;
@@ -568,7 +569,8 @@
   <button class="nav-btn" onclick="showSlide(2,this)">🧠 MCQ Practice</button>
   <button class="nav-btn" onclick="showSlide(3,this)">✅ True or False</button>
   <button class="nav-btn" onclick="showSlide(4,this)">✍️ Activity</button>
-  <button class="nav-btn" onclick="showSlide(5,this)">🏠 Homework</button>
+  <button class="nav-btn" onclick="showSlide(5,this)">🎟️ Exit ticket</button>
+  <button class="nav-btn" onclick="showSlide(6,this)">🏠 Home Work</button>
 </nav>
 
 <!-- ===== SLIDE 0: LEAD-IN ===== -->
@@ -851,9 +853,9 @@
   <div class="question-block" id="mcq-1">
     <p class="q-text">1. By the time we arrived, the movie <span class="q-fill">_____</span> already started.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(1,'A','B')"><span class="opt-icon">A</span> had — it started before we arrived</button>
-      <button class="opt-btn" onclick="checkMCQ(1,'B','B')"><span class="opt-icon">B</span> had — use Past Perfect for the earlier action</button>
-      <button class="opt-btn" onclick="checkMCQ(1,'C','B')"><span class="opt-icon">C</span> had — but only in questions</button>
+      <button class="opt-btn" onclick="checkMCQ(1,'A','B')"><span class="opt-icon">A</span> was</button>
+      <button class="opt-btn" onclick="checkMCQ(1,'B','B')"><span class="opt-icon">B</span> had</button>
+      <button class="opt-btn" onclick="checkMCQ(1,'C','B')"><span class="opt-icon">C</span> has</button>
     </div>
     <div class="feedback" id="fb-mcq-1"></div>
   </div>
@@ -862,9 +864,9 @@
   <div class="question-block" id="mcq-2">
     <p class="q-text">2. She was tired because she <span class="q-fill">_____</span> all day.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(2,'A','C')"><span class="opt-icon">A</span> had — but this describes a state</button>
-      <button class="opt-btn" onclick="checkMCQ(2,'B','C')"><span class="opt-icon">B</span> had — simple past is enough here</button>
-      <button class="opt-btn" onclick="checkMCQ(2,'C','C')"><span class="opt-icon">C</span> had — "had worked" happened before she felt tired</button>
+      <button class="opt-btn" onclick="checkMCQ(2,'A','C')"><span class="opt-icon">A</span> was working</button>
+      <button class="opt-btn" onclick="checkMCQ(2,'B','C')"><span class="opt-icon">B</span> worked</button>
+      <button class="opt-btn" onclick="checkMCQ(2,'C','C')"><span class="opt-icon">C</span> had worked</button>
     </div>
     <div class="feedback" id="fb-mcq-2"></div>
   </div>
@@ -873,9 +875,9 @@
   <div class="question-block" id="mcq-3">
     <p class="q-text">3. I didn't play video games until I <span class="q-fill">_____</span> my homework.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(3,'A','B')"><span class="opt-icon">A</span> had — but "finished" is just simple past</button>
-      <button class="opt-btn" onclick="checkMCQ(3,'B','B')"><span class="opt-icon">B</span> had — "had finished" happened first</button>
-      <button class="opt-btn" onclick="checkMCQ(3,'C','B')"><span class="opt-icon">C</span> had — present perfect form</button>
+      <button class="opt-btn" onclick="checkMCQ(3,'A','B')"><span class="opt-icon">A</span> finished</button>
+      <button class="opt-btn" onclick="checkMCQ(3,'B','B')"><span class="opt-icon">B</span> had finished</button>
+      <button class="opt-btn" onclick="checkMCQ(3,'C','B')"><span class="opt-icon">C</span> have finished</button>
     </div>
     <div class="feedback" id="fb-mcq-3"></div>
   </div>
@@ -884,9 +886,9 @@
   <div class="question-block" id="mcq-4">
     <p class="q-text">4. My brother walked to school because he <span class="q-fill">_____</span> the bus.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(4,'A','B')"><span class="opt-icon">A</span> had — simple past, same time</button>
-      <button class="opt-btn" onclick="checkMCQ(4,'B','B')"><span class="opt-icon">B</span> had — "had missed" happened before walking</button>
-      <button class="opt-btn" onclick="checkMCQ(4,'C','B')"><span class="opt-icon">C</span> had — present perfect</button>
+      <button class="opt-btn" onclick="checkMCQ(4,'A','B')"><span class="opt-icon">A</span> missed</button>
+      <button class="opt-btn" onclick="checkMCQ(4,'B','B')"><span class="opt-icon">B</span> had missed</button>
+      <button class="opt-btn" onclick="checkMCQ(4,'C','B')"><span class="opt-icon">C</span> has missed</button>
     </div>
     <div class="feedback" id="fb-mcq-4"></div>
   </div>
@@ -895,9 +897,9 @@
   <div class="question-block" id="mcq-5">
     <p class="q-text">5. <span class="q-fill">_____</span> Nada come before you arrived?</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(5,'A','A')"><span class="opt-icon">A</span> Had — auxiliary for Past Perfect questions</button>
-      <button class="opt-btn" onclick="checkMCQ(5,'B','A')"><span class="opt-icon">B</span> Had — but "Did" works for simple questions</button>
-      <button class="opt-btn" onclick="checkMCQ(5,'C','A')"><span class="opt-icon">C</span> Had — "Has" is present perfect</button>
+      <button class="opt-btn" onclick="checkMCQ(5,'A','A')"><span class="opt-icon">A</span> Had</button>
+      <button class="opt-btn" onclick="checkMCQ(5,'B','A')"><span class="opt-icon">B</span> Did</button>
+      <button class="opt-btn" onclick="checkMCQ(5,'C','A')"><span class="opt-icon">C</span> Has</button>
     </div>
     <div class="feedback" id="fb-mcq-5"></div>
   </div>
@@ -906,13 +908,14 @@
   <div class="question-block" id="mcq-6">
     <p class="q-text">6. When they <span class="q-fill">_____</span> enough money, they bought a new car.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(6,'A','B')"><span class="opt-icon">A</span> had — simple past, no sequence</button>
-      <button class="opt-btn" onclick="checkMCQ(6,'B','B')"><span class="opt-icon">B</span> had — "had saved" happened before "bought"</button>
-      <button class="opt-btn" onclick="checkMCQ(6,'C','B')"><span class="opt-icon">C</span> had — past continuous form</button>
+      <button class="opt-btn" onclick="checkMCQ(6,'A','B')"><span class="opt-icon">A</span> saved</button>
+      <button class="opt-btn" onclick="checkMCQ(6,'B','B')"><span class="opt-icon">B</span> had saved</button>
+      <button class="opt-btn" onclick="checkMCQ(6,'C','B')"><span class="opt-icon">C</span> were saving</button>
     </div>
     <div class="feedback" id="fb-mcq-6"></div>
   </div>
 </section>
+
 
 <!-- ===== SLIDE 3: TRUE/FALSE ===== -->
 <section class="slide" id="slide-3">
@@ -956,8 +959,35 @@
   <div id="activity-container"></div>
 </section>
 
-<!-- ===== SLIDE 5: HOMEWORK ===== -->
+<!-- ===== SLIDE 5: EXIT TICKET ===== -->
 <section class="slide" id="slide-5">
+  <div class="slide-header">
+    <div class="slide-badge" style="background:#dcfce7;">🎟️</div>
+    <div>
+      <h1 style="color:var(--green)">EXIT TICKET</h1>
+      <p>Complete these tasks before next class</p>
+    </div>
+  </div>
+  <!-- ===== EXIT TICKET ===== -->
+  <div class="exit-ticket">
+    <h3>🎟️ Exit Ticket</h3>
+    <p>Before you leave, write <strong>3 sentences of your own</strong> using the Past Perfect Tense. Use a different keyword in each sentence!</p>
+    <div class="et-item"><div class="et-num">1</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">before</strong></div>
+    <div class="et-item"><div class="et-num">2</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">after</strong></div>
+    <div class="et-item"><div class="et-num">3</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">by the time</strong></div>
+    <div style="margin-top:12px; font-size:13px; opacity:0.75;">💡 Tip: Make sure the action that happened <em>first</em> uses <strong>had + V3</strong>!</div>
+  </div>
+ 
+
+  <!-- Footer credit -->
+  <div class="footer-banner">
+    <div class="teacher-name">Israa Abdalla</div>
+    <div class="teacher-title">Cambridge Certified English Teacher</div>
+  </div>
+</section>
+
+<!-- ===== SLIDE 6: HOMEWORK ===== -->
+<section class="slide" id="slide-6">
   <div class="slide-header">
     <div class="slide-badge" style="background:#dcfce7;">🏠</div>
     <div>
@@ -988,15 +1018,6 @@
     <p><strong>Fill in the blank:</strong> By the time dad came home, mom ___________ (cook) dinner.</p>
   </div>
 
-  <!-- ===== EXIT TICKET ===== -->
-  <div class="exit-ticket">
-    <h3>🎟️ Exit Ticket</h3>
-    <p>Before you leave, write <strong>3 sentences of your own</strong> using the Past Perfect Tense. Use a different keyword in each sentence!</p>
-    <div class="et-item"><div class="et-num">1</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">before</strong></div>
-    <div class="et-item"><div class="et-num">2</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">after</strong></div>
-    <div class="et-item"><div class="et-num">3</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">by the time</strong></div>
-    <div style="margin-top:12px; font-size:13px; opacity:0.75;">💡 Tip: Make sure the action that happened <em>first</em> uses <strong>had + V3</strong>!</div>
-  </div>
 
   <div class="hw-item" style="margin-top:1rem">
     <div class="hw-num">⭐</div>
