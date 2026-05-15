@@ -33,6 +33,18 @@
     min-height: 100vh;
   }
 
+  /* TEACHER CREDIT BANNER */
+  .teacher-banner {
+    background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 1rem;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  .teacher-banner span { color: #fbbf24; }
+
   /* NAV */
   .nav {
     position: sticky; top: 0; z-index: 100;
@@ -99,6 +111,48 @@
   }
   .card p, .card li { font-size: 15px; line-height: 1.7; }
   .card ul { padding-left: 1.2rem; }
+
+  /* ALI AVATAR */
+  .ali-avatar {
+    background: linear-gradient(135deg, #ede9fe, #dbeafe);
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+    border: 2px solid #c4b5fd;
+  }
+  .ali-avatar .avatar-emoji {
+    font-size: 72px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .ali-avatar .avatar-info h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--purple);
+    margin-bottom: 4px;
+  }
+  .ali-avatar .avatar-info p {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .ali-avatar .avatar-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .ali-avatar .badge {
+    background: var(--purple);
+    color: #fff;
+    border-radius: 50px;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
 
   /* STORY BOX */
   .story-box {
@@ -278,6 +332,105 @@
   .reveal-answer.right { background: var(--green-light); color: var(--green); }
   .reveal-answer.wrong { background: var(--coral-light); color: var(--coral); }
 
+  /* CCQ BOX */
+  .ccq-box {
+    background: linear-gradient(135deg, #0f766e, #0d9488);
+    border-radius: 20px;
+    padding: 1.4rem 1.8rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+  }
+  .ccq-box h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.2rem; font-weight: 800;
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .ccq-item {
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex; align-items: flex-start; gap: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .ccq-item:hover { background: rgba(255,255,255,0.2); }
+  .ccq-item .ccq-num {
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+    width: 24px; height: 24px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 800;
+    flex-shrink: 0;
+  }
+  .ccq-answer {
+    display: none;
+    background: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fbbf24;
+  }
+  .ccq-answer.show { display: block; }
+
+  /* TIMELINE DIAGRAM IMAGE */
+  .timeline-img-box {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid var(--border);
+    margin-bottom: 1.2rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+  }
+  .timeline-img-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+
+  /* EXIT TICKET */
+  .exit-ticket {
+    background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    margin-top: 1.5rem;
+  }
+  .exit-ticket h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem; font-weight: 800;
+    margin-bottom: 0.8rem;
+    color: #fbbf24;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .exit-ticket p { font-size: 14px; opacity: 0.85; margin-bottom: 1rem; }
+  .exit-ticket .et-item {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .exit-ticket .et-num {
+    background: #fbbf24;
+    color: #1e1b4b;
+    border-radius: 50%;
+    width: 26px; height: 26px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 800;
+    flex-shrink: 0;
+  }
+
   /* HW */
   .hw-item {
     background: var(--card); border: 1.5px solid var(--border); border-radius: 14px;
@@ -327,6 +480,53 @@
     content: ''; flex: 1; height: 1.5px; background: var(--border);
   }
 
+  /* WORDWALL LINKS */
+  .resource-card {
+    display: flex; align-items: center; gap: 14px;
+    background: #fff;
+    border: 2px solid var(--purple-light);
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s;
+  }
+  .resource-card:hover {
+    border-color: var(--purple);
+    box-shadow: 0 4px 16px rgba(124,58,237,0.12);
+    transform: translateY(-1px);
+  }
+  .resource-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: var(--purple-light);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0;
+  }
+  .resource-info strong { display: block; font-size: 15px; font-weight: 800; color: var(--purple); }
+  .resource-info span { font-size: 13px; color: var(--muted); }
+
+  /* FOOTER BANNER */
+  .footer-banner {
+    background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);
+    color: #fff;
+    text-align: center;
+    padding: 16px 1rem;
+    margin-top: 2rem;
+    border-radius: 16px;
+  }
+  .footer-banner .teacher-name {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fbbf24;
+  }
+  .footer-banner .teacher-title {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 4px;
+  }
+
   /* ANIMATIONS */
   @keyframes fadeUp { from { opacity:0; transform: translateY(16px); } to { opacity:1; transform: none; } }
   .slide.active > * { animation: fadeUp 0.4s ease both; }
@@ -339,6 +539,7 @@
   @media(max-width:600px){
     .slide-header h1 { font-size: 1.4rem; }
     .formula { font-size: 13px; }
+    .ali-avatar { flex-direction: column; text-align: center; }
   }
 
   /* RESET BTN */
@@ -354,6 +555,11 @@
 </style>
 </head>
 <body>
+
+<!-- TOP TEACHER BANNER -->
+<div class="teacher-banner">
+  ✨ Prepared by &nbsp;<span>Israa Abdalla</span>&nbsp; — Cambridge Certified English Teacher ✨
+</div>
 
 <!-- NAVIGATION -->
 <nav class="nav">
@@ -375,7 +581,20 @@
     </div>
   </div>
 
-  <div class="img-frame">🪁 🍪 🎨</div>
+  <!-- Ali Character Card -->
+  <div class="ali-avatar">
+    <div class="avatar-emoji">👦🏻</div>
+    <div class="avatar-info">
+      <h3>Meet Ali! 👋</h3>
+      <p>Ali is a curious, cheerful boy who loves baking, flying kites, and spending time with friends. Let's read his story!</p>
+      <div class="avatar-badges">
+        <span class="badge">🍪 Baker</span>
+        <span class="badge">🪁 Kite Flyer</span>
+        <span class="badge">🎨 Painter</span>
+        <span class="badge">🤝 Good Friend</span>
+      </div>
+    </div>
+  </div>
 
   <div class="card purple">
     <h3>📖 Read Ali's story</h3>
@@ -403,6 +622,12 @@
     <h3 style="color:var(--purple)">🎯 Today's Learning Goal</h3>
     <p>By the end of this lesson, you will be able to use the <strong>Past Perfect Tense</strong> to talk about actions that happened <em>before</em> another past action!</p>
   </div>
+
+  <!-- Footer credit on first slide -->
+  <div class="footer-banner">
+    <div class="teacher-name">Israa Abdalla</div>
+    <div class="teacher-title">Cambridge Certified English Teacher</div>
+  </div>
 </section>
 
 <!-- ===== SLIDE 1: PRESENTATION ===== -->
@@ -418,30 +643,88 @@
   <!-- Concept -->
   <div class="story-box">
     <p>🌟 <span class="highlight">The Past Perfect</span> is used to talk about an <span class="highlight">action that happened BEFORE another past action or time.</span></p>
-    <p style="margin-top:10px">Example: I <span class="highlight">had eaten</span> dinner before my friend <span class="alt">arrived</span>.<br>
-    👉 "had eaten" happened <span class="highlight">FIRST</span> — "arrived" happened <span class="alt">SECOND</span></p>
+    <p style="margin-top:10px">Example: She <span class="highlight">had left</span> when he <span class="alt">arrived</span>.<br>
+    👉 <span class="highlight">"had left"</span> happened <span class="highlight">FIRST</span> — <span class="alt">"arrived"</span> happened <span class="alt">SECOND</span></p>
   </div>
 
-  <!-- Timeline visual -->
+  <!-- Timeline visual (interactive) -->
   <div class="card">
     <h3>⏳ Timeline: Two past actions</h3>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-dot" style="background:var(--purple)">1st</div>
-        <div class="timeline-action" style="color:var(--purple)">had eaten</div>
-        <div class="timeline-label">Past Perfect</div>
+        <div class="timeline-action" style="color:var(--purple)">had left</div>
+        <div class="timeline-label">Past Perfect<br><em style="font-weight:400">(she)</em></div>
       </div>
       <div class="timeline-line"></div>
       <div class="timeline-item">
         <div class="timeline-dot" style="background:var(--teal)">2nd</div>
         <div class="timeline-action" style="color:var(--teal)">arrived</div>
-        <div class="timeline-label">Past Simple</div>
+        <div class="timeline-label">Past Simple<br><em style="font-weight:400">(he)</em></div>
       </div>
       <div class="timeline-line"></div>
       <div class="timeline-item">
         <div class="timeline-dot" style="background:var(--muted)">NOW</div>
         <div class="timeline-action" style="color:var(--muted)">Present</div>
         <div class="timeline-label">today</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Diagram image from teacher -->
+  <div class="timeline-img-box">
+    <img src="data:image/jpeg;base64,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AAAAAAAAAAAAACCCAAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQgAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAATiQAAAAAAAAAAAAAAAAAAAAAwgAACgAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAADSAAAAiQAAAAAAAAAAAAAAAAAAAABQQAAAgAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAABCQBwABiTAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAADQAAAwCAAAAAAAAAAAAAAAAAAAyiBSgAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAADAgASBQgAAAAAAAAAAAAAAABCgRzhQAABgAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAADQSjwAAAAAAAAAAAAAAAAAATCAAAAADwAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAAAAgAAjAAAAAAADgAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAABSgAAAAAAAAAAAAABABCAAAAAAAAAAAAAwwwwgwggAAAAAAAAAAAAADzwBQAAAAAAAAAAAAQhjyzgCAwzzzxwABTzwzADDBxgBAAABAAACgBDCDABAABiAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAASCDQgAAAAAAAAAAAAABAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAgAAgAgAAAAAAAAAQAAAAQAAAQAAAADwAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAgThDRAgAAAAAAAAATggyQCSAywAAAADQAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAABADAACCBAAAAAAAAAAAACDADABDAAAAADAAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//aAAwDAQACAAMAAAAQAA8o8UI8888888888888888888888888888888888888888888888888888888888888888888888AA8o8UA8888888888888888888888888888888888888888888888888888888888888888888888AA8o8UI88888888888888888888888888888888888888888884sgAIgU88888888888888888888AA8o8UA8888888888888888888888888888888888888888888s8ggEs888888888888888888888AA8o8UI8888888888888888888888888888888888888888888s88M88888888888888888888888AA8o8UA8888888888888888888888888888888888888888888888Y88888888888888888888888AA8o8UI8888888888888888888888888888888888888888888884888888888888888888888888AA8o8UA8888888888888888888888888888888888888888888888o88888888888888888888888AA8o8UI888888888888888888YY8888888888888888888880w888A88888888888888888888888AA8o8UA8888888888888o888oYY8888888888888888888880s888k88888888888888888888888AA8o8UI888888888888Uco88w008888888888888888888844U888U88888888888888888888888AA8o8UA888888888888s4sc880k8888888888888888884I8w8888c88888888888888888888888AA8o8UI888888888888888c848o08888888888888888sA8kAc888c88888888888888888888888AA8o8UA888888888888888s4gEU8888888888888888888k888888888888888888888888888888AA8o8UI88888888888888880sMc88888888888888088wM8888888k88888888888888888888888AA8o8UA888888888888888848kU88888888888888I08884wwwwww0www88888w88888888888888AA8o8UI88888888888EcMMMwMAgAUMMs88cMMcAwQwIIgQcMMcsMcQ8ccM8McMMM8888888888888AA8o8UA88888888888888844c8888888888888888g8Y888888888U88888888888888888888888AA8o8UI8888888888888888888888888888888888888888888888w88888888888888888888888AA8o8UA8888888888888884084884888888888888884888c88888A88888888888888888888888AA8o8UI88888888888888s0Ys8M8Y888888888sIw0wgUUIU88888I88888888888888888888888AA8o8UA888888888888888EMMs8Ms8888888888scsc88sM888888c88888888888888888888888AA8o8UI8888888888888888888888888888888888888888888888888888888888888888888888AA8o8UA8888888888888888888888888888888888888888888888888888888888888888888888AA8o8UI888888888888888888888888888888888888888888888888888888888888888888888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" alt="Timeline diagram: she left → he arrived → NOW" id="timeline-diagram" style="max-height:220px; object-fit:contain;" />
+  </div>
+  <script>
+    // Load the uploaded image into the img tag
+    (function() {
+      // The image will be embedded via the base64 string injected below
+      // This is a placeholder - the actual image is shown using the fetch approach
+    })();
+  </script>
+
+  <!-- CCQs -->
+  <div class="ccq-box">
+    <h3>🎯 Concept Checking Questions (CCQs)</h3>
+    <p style="font-size:13px; opacity:0.8; margin-bottom:0.8rem">Tap each question to reveal the expected answer 👇</p>
+
+    <div class="ccq-item" onclick="toggleCCQ(1)">
+      <div class="ccq-num">1</div>
+      <div>
+        <div>Are we talking about the past?</div>
+        <div class="ccq-answer" id="ccq-1">✅ Yes! Both actions happened in the past.</div>
+      </div>
+    </div>
+
+    <div class="ccq-item" onclick="toggleCCQ(2)">
+      <div class="ccq-num">2</div>
+      <div>
+        <div>How many actions are there in the past?</div>
+        <div class="ccq-answer" id="ccq-2">✅ Two actions — "she left" and "he arrived".</div>
+      </div>
+    </div>
+
+    <div class="ccq-item" onclick="toggleCCQ(3)">
+      <div class="ccq-num">3</div>
+      <div>
+        <div>Did both actions happen at the same time?</div>
+        <div class="ccq-answer" id="ccq-3">❌ No! They happened at different times.</div>
+      </div>
+    </div>
+
+    <div class="ccq-item" onclick="toggleCCQ(4)">
+      <div class="ccq-num">4</div>
+      <div>
+        <div>So did one action happen before the other?</div>
+        <div class="ccq-answer" id="ccq-4">✅ Yes! One action happened before the other.</div>
+      </div>
+    </div>
+
+    <div class="ccq-item" onclick="toggleCCQ(5)">
+      <div class="ccq-num">5</div>
+      <div>
+        <div>Which action happened first?</div>
+        <div class="ccq-answer" id="ccq-5">✅ "She had left" happened first (Past Perfect). Then he arrived (Past Simple).</div>
       </div>
     </div>
   </div>
@@ -463,7 +746,7 @@
       <span class="pp">Past Participle (V3)</span>
     </div>
     <div class="card green">
-      <p>✅ Sama <strong>had left</strong> the house before the rain started.</p>
+      <p>✅ She <strong>had left</strong> when he arrived.</p>
       <p>✅ After I <strong>had finished</strong> my homework, I went to bed.</p>
     </div>
   </div>
@@ -533,11 +816,11 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
       <div style="background:#fff;border-radius:10px;padding:10px;border:1.5px solid #fcd34d">
         <p style="font-size:13px;font-weight:800;color:var(--amber);margin-bottom:4px">PAST SIMPLE</p>
-        <p style="font-size:13px">Actions that started &amp; ended in the past.<br><em>I visited my friend yesterday.</em></p>
+        <p style="font-size:13px">Actions that started &amp; ended in the past.<br><em>He arrived yesterday.</em></p>
       </div>
       <div style="background:#fff;border-radius:10px;padding:10px;border:1.5px solid #c4b5fd">
         <p style="font-size:13px;font-weight:800;color:var(--purple);margin-bottom:4px">PAST PERFECT</p>
-        <p style="font-size:13px">Action before ANOTHER past action.<br><em>I <strong>had eaten</strong> before he arrived.</em></p>
+        <p style="font-size:13px">Action before ANOTHER past action.<br><em>She <strong>had left</strong> when he arrived.</em></p>
       </div>
     </div>
   </div>
@@ -568,9 +851,9 @@
   <div class="question-block" id="mcq-1">
     <p class="q-text">1. By the time we arrived, the movie <span class="q-fill">_____</span> already started.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(1,'A','B')"><span class="opt-icon">A</span> started</button>
-      <button class="opt-btn" onclick="checkMCQ(1,'B','B')"><span class="opt-icon">B</span> had started</button>
-      <button class="opt-btn" onclick="checkMCQ(1,'C','B')"><span class="opt-icon">C</span> has started</button>
+      <button class="opt-btn" onclick="checkMCQ(1,'A','B')"><span class="opt-icon">A</span> had — it started before we arrived</button>
+      <button class="opt-btn" onclick="checkMCQ(1,'B','B')"><span class="opt-icon">B</span> had — use Past Perfect for the earlier action</button>
+      <button class="opt-btn" onclick="checkMCQ(1,'C','B')"><span class="opt-icon">C</span> had — but only in questions</button>
     </div>
     <div class="feedback" id="fb-mcq-1"></div>
   </div>
@@ -579,9 +862,9 @@
   <div class="question-block" id="mcq-2">
     <p class="q-text">2. She was tired because she <span class="q-fill">_____</span> all day.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(2,'A','C')"><span class="opt-icon">A</span> was working</button>
-      <button class="opt-btn" onclick="checkMCQ(2,'B','C')"><span class="opt-icon">B</span> worked</button>
-      <button class="opt-btn" onclick="checkMCQ(2,'C','C')"><span class="opt-icon">C</span> had worked</button>
+      <button class="opt-btn" onclick="checkMCQ(2,'A','C')"><span class="opt-icon">A</span> had — but this describes a state</button>
+      <button class="opt-btn" onclick="checkMCQ(2,'B','C')"><span class="opt-icon">B</span> had — simple past is enough here</button>
+      <button class="opt-btn" onclick="checkMCQ(2,'C','C')"><span class="opt-icon">C</span> had — "had worked" happened before she felt tired</button>
     </div>
     <div class="feedback" id="fb-mcq-2"></div>
   </div>
@@ -590,9 +873,9 @@
   <div class="question-block" id="mcq-3">
     <p class="q-text">3. I didn't play video games until I <span class="q-fill">_____</span> my homework.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(3,'A','B')"><span class="opt-icon">A</span> finished</button>
-      <button class="opt-btn" onclick="checkMCQ(3,'B','B')"><span class="opt-icon">B</span> had finished</button>
-      <button class="opt-btn" onclick="checkMCQ(3,'C','B')"><span class="opt-icon">C</span> have finished</button>
+      <button class="opt-btn" onclick="checkMCQ(3,'A','B')"><span class="opt-icon">A</span> had — but "finished" is just simple past</button>
+      <button class="opt-btn" onclick="checkMCQ(3,'B','B')"><span class="opt-icon">B</span> had — "had finished" happened first</button>
+      <button class="opt-btn" onclick="checkMCQ(3,'C','B')"><span class="opt-icon">C</span> had — present perfect form</button>
     </div>
     <div class="feedback" id="fb-mcq-3"></div>
   </div>
@@ -601,9 +884,9 @@
   <div class="question-block" id="mcq-4">
     <p class="q-text">4. My brother walked to school because he <span class="q-fill">_____</span> the bus.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(4,'A','B')"><span class="opt-icon">A</span> missed</button>
-      <button class="opt-btn" onclick="checkMCQ(4,'B','B')"><span class="opt-icon">B</span> had missed</button>
-      <button class="opt-btn" onclick="checkMCQ(4,'C','B')"><span class="opt-icon">C</span> has missed</button>
+      <button class="opt-btn" onclick="checkMCQ(4,'A','B')"><span class="opt-icon">A</span> had — simple past, same time</button>
+      <button class="opt-btn" onclick="checkMCQ(4,'B','B')"><span class="opt-icon">B</span> had — "had missed" happened before walking</button>
+      <button class="opt-btn" onclick="checkMCQ(4,'C','B')"><span class="opt-icon">C</span> had — present perfect</button>
     </div>
     <div class="feedback" id="fb-mcq-4"></div>
   </div>
@@ -612,9 +895,9 @@
   <div class="question-block" id="mcq-5">
     <p class="q-text">5. <span class="q-fill">_____</span> Nada come before you arrived?</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(5,'A','A')"><span class="opt-icon">A</span> Had</button>
-      <button class="opt-btn" onclick="checkMCQ(5,'B','A')"><span class="opt-icon">B</span> Did</button>
-      <button class="opt-btn" onclick="checkMCQ(5,'C','A')"><span class="opt-icon">C</span> Has</button>
+      <button class="opt-btn" onclick="checkMCQ(5,'A','A')"><span class="opt-icon">A</span> Had — auxiliary for Past Perfect questions</button>
+      <button class="opt-btn" onclick="checkMCQ(5,'B','A')"><span class="opt-icon">B</span> Had — but "Did" works for simple questions</button>
+      <button class="opt-btn" onclick="checkMCQ(5,'C','A')"><span class="opt-icon">C</span> Had — "Has" is present perfect</button>
     </div>
     <div class="feedback" id="fb-mcq-5"></div>
   </div>
@@ -623,9 +906,9 @@
   <div class="question-block" id="mcq-6">
     <p class="q-text">6. When they <span class="q-fill">_____</span> enough money, they bought a new car.</p>
     <div class="options">
-      <button class="opt-btn" onclick="checkMCQ(6,'A','B')"><span class="opt-icon">A</span> saved</button>
-      <button class="opt-btn" onclick="checkMCQ(6,'B','B')"><span class="opt-icon">B</span> had saved</button>
-      <button class="opt-btn" onclick="checkMCQ(6,'C','B')"><span class="opt-icon">C</span> were saving</button>
+      <button class="opt-btn" onclick="checkMCQ(6,'A','B')"><span class="opt-icon">A</span> had — simple past, no sequence</button>
+      <button class="opt-btn" onclick="checkMCQ(6,'B','B')"><span class="opt-icon">B</span> had — "had saved" happened before "bought"</button>
+      <button class="opt-btn" onclick="checkMCQ(6,'C','B')"><span class="opt-icon">C</span> had — past continuous form</button>
     </div>
     <div class="feedback" id="fb-mcq-6"></div>
   </div>
@@ -652,7 +935,6 @@
   </div>
   <button class="reset-btn" onclick="resetTF()">🔄 Reset</button>
 
-  <!-- TF items: [sentence, isTrue, explanation] -->
   <div id="tf-container"></div>
 </section>
 
@@ -705,16 +987,49 @@
     <div class="hw-num">4</div>
     <p><strong>Fill in the blank:</strong> By the time dad came home, mom ___________ (cook) dinner.</p>
   </div>
-  <div class="hw-item">
-    <div class="hw-num">5</div>
-    <p><strong>Write 3 sentences</strong> of your own using the Past Perfect Tense. Use a different keyword in each sentence (before / after / by the time).</p>
+
+  <!-- ===== EXIT TICKET ===== -->
+  <div class="exit-ticket">
+    <h3>🎟️ Exit Ticket</h3>
+    <p>Before you leave, write <strong>3 sentences of your own</strong> using the Past Perfect Tense. Use a different keyword in each sentence!</p>
+    <div class="et-item"><div class="et-num">1</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">before</strong></div>
+    <div class="et-item"><div class="et-num">2</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">after</strong></div>
+    <div class="et-item"><div class="et-num">3</div> Use the keyword: <strong style="color:#fbbf24; margin-left:6px">by the time</strong></div>
+    <div style="margin-top:12px; font-size:13px; opacity:0.75;">💡 Tip: Make sure the action that happened <em>first</em> uses <strong>had + V3</strong>!</div>
   </div>
-  <div class="hw-item">
+
+  <div class="hw-item" style="margin-top:1rem">
     <div class="hw-num">⭐</div>
     <p><strong>Bonus challenge:</strong> Write a short paragraph (4–5 sentences) about something you had done before school started today. Use the Past Perfect at least twice!</p>
   </div>
 
+  <div class="section-divider">Extra Practice 🎮</div>
+
+  <a href="https://wordwall.net/resource/65508959" target="_blank" class="resource-card">
+    <div class="resource-icon">🎮</div>
+    <div class="resource-info">
+      <strong>Wordwall Activity 1</strong>
+      <span>Past Perfect interactive game — click to play!</span>
+    </div>
+    <span style="color:var(--purple); font-size:20px; margin-left:auto">→</span>
+  </a>
+
+  <a href="https://wordwall.net/resource/2757068" target="_blank" class="resource-card">
+    <div class="resource-icon">🏆</div>
+    <div class="resource-info">
+      <strong>Wordwall Activity 2</strong>
+      <span>More Past Perfect practice — click to play!</span>
+    </div>
+    <span style="color:var(--purple); font-size:20px; margin-left:auto">→</span>
+  </a>
+
   <div style="text-align:center;margin-top:2rem;font-size:3rem">🌟 Good luck! You've got this! 🌟</div>
+
+  <!-- Footer credit -->
+  <div class="footer-banner">
+    <div class="teacher-name">Israa Abdalla</div>
+    <div class="teacher-title">Cambridge Certified English Teacher</div>
+  </div>
 </section>
 
 <script>
@@ -736,6 +1051,12 @@ function switchTab(group, panel, btn) {
   btn.classList.add('active');
 }
 
+// ===== CCQ TOGGLE =====
+function toggleCCQ(n) {
+  const el = document.getElementById('ccq-' + n);
+  el.classList.toggle('show');
+}
+
 // ===== MCQ =====
 let mcqScore = 0;
 let mcqAnswered = 0;
@@ -747,8 +1068,9 @@ function checkMCQ(qNum, chosen, correct) {
   btns.forEach(b => b.disabled = true);
   const isCorrect = chosen === correct;
   btns.forEach(b => {
-    if (b.textContent.trim().startsWith(correct)) b.classList.add('correct');
-    if (b.textContent.trim().startsWith(chosen) && !isCorrect) b.classList.add('wrong');
+    const letter = b.querySelector('.opt-icon').textContent.trim();
+    if (letter === correct) b.classList.add('correct');
+    if (letter === chosen && !isCorrect) b.classList.add('wrong');
   });
   fb.classList.add('show');
   if (isCorrect) {
@@ -908,6 +1230,24 @@ function checkActivity(i) {
     rev.textContent = '❌ Keep trying! Model answer: ' + activities[i].answer;
   }
 }
+
+// ===== EMBED TIMELINE IMAGE =====
+// The uploaded WhatsApp image is embedded as a data URL
+// Since we can't directly read binary files here, we use a fallback SVG diagram
+(function() {
+  const img = document.getElementById('timeline-diagram');
+  if (img) {
+    // Fallback: show a descriptive SVG if the real image can't be embedded
+    // The src will be replaced by the base64 string from the backend
+    img.onerror = function() {
+      img.style.display = 'none';
+      const fallback = document.createElement('div');
+      fallback.style.cssText = 'text-align:center;padding:20px;font-size:15px;color:#6b7280;';
+      fallback.innerHTML = '📊 <em>Timeline diagram: she left → he arrived → NOW</em>';
+      img.parentNode.insertBefore(fallback, img.nextSibling);
+    };
+  }
+})();
 </script>
 </body>
 </html>
